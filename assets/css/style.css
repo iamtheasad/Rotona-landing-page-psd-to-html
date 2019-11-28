@@ -721,6 +721,11 @@ ul, p {
 
 .menu.menu_bottom a {
    color: #222;
+   padding-top: 0;
+}
+
+.footer_rights {
+   padding-top: 22px;
 }
 /************************************
    Footer Section End
