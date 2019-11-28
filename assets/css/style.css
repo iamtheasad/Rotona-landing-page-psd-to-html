@@ -510,10 +510,221 @@ ul, p {
 *************************************/
 
 
+/************************************
+   People Say Section Start
+*************************************/
+#people_say {
+   background-image: url(../images/people-say/people_say_bg.png);
+   padding-top: 100px;
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+}
+
+.reviews_img {
+   height: 500px;
+}
+
+.people_say_content {
+   position: relative;
+   display: table-cell;
+   height: 500px;
+}
+
+.people_say_content h2 {
+   display: inline-block;
+}
+
+.people_say_content img {
+   line-height: 70px;
+   position: absolute;
+   top: 22%;
+   right: 20%;
+}
+
+.people_say_content p {
+   margin-top: 50px;
+   margin-bottom: 50px;
+}
+
+.people_say_content h5 {
+   font-size: 18px;
+   font-weight: 700;
+}
+
+.people_say_content h5 span {
+   display: block;
+   font-size: 14px;
+   font-weight: normal;
+   margin-top: 5px;
+}
+/************************************
+   People Say Section End
+*************************************/
 
 
+/************************************
+   Brand Section Start
+*************************************/
+.brands_logo:nth-child(1), 
+.brands_logo:nth-child(2), 
+.brands_logo:nth-child(3), 
+.brands_logo:nth-child(5), 
+.brands_logo:nth-child(6) {
+   border-right: 1px solid #ddd;
+}
+
+.brands_logo:nth-child(1),
+.brands_logo:nth-child(2), 
+.brands_logo:nth-child(3), 
+.brands_logo:nth-child(4) {
+   border-bottom: 1px solid #ddd;
+}
+
+.brand_icon {
+   padding: 100px;
+}
+/************************************
+   Brand Section End
+*************************************/
 
 
+/************************************
+   Latest News Section Start
+*************************************/
+#latest_news {
+   padding: 100px 0px;
+}
+
+.latest_news_single_item h2 {
+   font-size: 18px;
+   font-weight: 700;
+   margin-top: 30px;
+   margin-bottom: 25px;
+}
+
+.latest_news_single_item img {
+   width: 100%;
+}
+
+.latest_news_single_item p {
+   margin-bottom: 30px;
+}
+
+.lastes_news_border {
+   padding-top: 25px;
+   border-top: 1px solid #ddd;
+}
+
+.lastes_news_border span {
+   color: #999999;
+}
+
+.lastes_news_border a {
+   color: #222222;
+   font-weight: 700;
+   font-family: 'Poppins', sans-serif;
+   text-decoration: none;
+}
+/************************************
+   Latest News Section End
+*************************************/
+
+/************************************
+   Footer Section Start
+*************************************/
+#footer {
+   background-image: url(../images/footer/footer_bg.png);
+   background-position: center;
+   background-size: cover;
+   padding-top: 300px;
+   padding-bottom: 50px;
+}
+
+.footer_text h2 {
+   font-weight: 700;
+}
+
+.footer_text p {
+   margin-top: 50px;
+   margin-bottom: 120px;
+}
+
+.form_submit {
+   position: relative;
+}
+
+.form_submit:after {
+   content: '';
+   position: absolute;
+   width: 100%;
+   border-bottom: 2px solid #d5cdd9;
+   bottom: -11%;
+   left: 0%;}
+
+.form_submit input[type="email"] {
+   width: 73%;
+   border: none;
+   padding: 10px;
+   background: none;
+   outline-color: #913bbe;
+}
+
+.form_submit input[type="submit"] {
+   padding: 15px 25px;
+   outline: none;
+   border: none;
+   color: #fff;
+   background: #913bbe;
+   font-weight: 700;
+}
+
+.footer_height {
+   display: table-cell;
+   height: 340px;
+}
+
+.social_icons {
+   font-size: 26px;
+   display: table-cell;
+   height: 340px;
+   padding-left: 30px;
+}
+
+.social_icons a:nth-child(1) {
+   color: #3b5998;
+}
+
+.social_icons a:nth-child(2) {
+   color: #1da1f2;
+}
+
+.social_icons a:nth-child(3) {
+   color: #dd4d3b;
+}
+
+.social_icons a:nth-child(4) {
+   color: #0077b5;
+}
+
+.social_icons a {
+   padding: 5px;
+}
+
+.footer_rights a {
+   color: #222222;
+   font-weight: 700;
+   font-family: 'Poppins', sans-serif;
+   text-decoration: none;
+}
+
+.menu.menu_bottom a {
+   color: #222;
+}
+/************************************
+   Footer Section End
+*************************************/
 
 
 
