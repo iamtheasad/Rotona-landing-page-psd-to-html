@@ -1,29 +1,37 @@
+
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap');
 
-*{
+* {
    margin: 0px;
    padding: 0px;
 }
 
 body {
+   -webkit-box-sizing: border-box;
    box-sizing: border-box;
    color: #444444;
    font-size: 14px;
    font-family: 'Open Sans', sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
    font-family: 'Poppins', sans-serif;
    margin: 0;
    padding: 0;
    color: #222222;
 }
 
-p{
+p {
    color: #444444;
 }
 
-ul, p {
+ul,
+p {
    margin: 0px;
    padding: 0px;
 }
@@ -67,6 +75,7 @@ ul, p {
    font-family: 'Open Sans', sans-serif;
    display: block;
    font-weight: 700;
+   -webkit-transition: .1s;
    transition: .1s;
    -moz-transition: .1s;
    -o-transition: .1s;
@@ -75,6 +84,7 @@ ul, p {
 .menu ul li a:hover {
    color: #913bbe;
 }
+
 /* Menu area end */
 
 /* Header Body Area Start */
@@ -153,6 +163,7 @@ ul, p {
 .header_body_download_btn img {
    margin-top: -15px;
 }
+
 /******************************
       Header Area End
 *******************************/
@@ -178,6 +189,8 @@ ul, p {
    position: absolute;
    top: 50%;
    left: 6%;
+   -webkit-transform: translateY(-50%);
+   -ms-transform: translateY(-50%);
    transform: translateY(-50%);
 }
 
@@ -254,6 +267,7 @@ ul, p {
    background: #f6f6f6;
    height: 2px;
 }
+
 /******************************
      Story Section End
 *******************************/
@@ -297,6 +311,7 @@ ul, p {
    left: 39%;
    color: #913bbe;
 }
+
 /******************************
    Services section end
 *******************************/
@@ -332,6 +347,7 @@ ul, p {
    color: #fff;
    font-weight: 700;
 }
+
 /************************************
    CounterUp js on scrolling end
 *************************************/
@@ -369,6 +385,8 @@ ul, p {
    z-index: 4;
    top: 50%;
    left: 0;
+   -webkit-transform: translateY(-50%);
+   -ms-transform: translateY(-50%);
    transform: translateY(-50%);
 }
 
@@ -378,6 +396,8 @@ ul, p {
    left: 0;
    width: 100%;
    z-index: 2;
+   -webkit-transform: translateY(-50%);
+   -ms-transform: translateY(-50%);
    transform: translateY(-50%);
 }
 
@@ -406,6 +426,7 @@ ul, p {
 .recent_works_text a {
    text-decoration: none;
 }
+
 /************************************
    Recent Works End
 *************************************/
@@ -435,30 +456,52 @@ ul, p {
    width: 100%;
    height: 100%;
    opacity: 0.4;
+   -webkit-transition: .3s;
+   -o-transition: .3s;
    transition: .3s;
 }
 
 .single_service_item:hover .at-item {
    color: #3079ed;
+   -webkit-animation-name: angry-animation;
    animation-name: angry-animation;
+   -webkit-animation-duration: 1s;
    animation-duration: 1s;
+   -webkit-animation-timing-function: cubic-bezier(0.27, 0.04, 0.76, 1.01);
    animation-timing-function: cubic-bezier(0.27, 0.04, 0.76, 1.01);
+   -webkit-animation-delay: 0s;
    animation-delay: 0s;
+   -webkit-animation-iteration-count: 1;
    animation-iteration-count: 1;
+   -webkit-animation-direction: normal;
    animation-direction: normal;
- }
- @keyframes angry-animation {
-   0%{
-     -webkit-transform: rotateY(-180deg);
-     transform: rotateY(-180deg);
-   }
-   100%{
-     -webkit-transform: rotateY(0);
-     transform: rotateY(0deg);
-   }
- }
+}
 
- .service_2_content img {
+@-webkit-keyframes angry-animation {
+   0% {
+      -webkit-transform: rotateY(-180deg);
+      transform: rotateY(-180deg);
+   }
+
+   100% {
+      -webkit-transform: rotateY(0);
+      transform: rotateY(0deg);
+   }
+}
+
+@keyframes angry-animation {
+   0% {
+      -webkit-transform: rotateY(-180deg);
+      transform: rotateY(-180deg);
+   }
+
+   100% {
+      -webkit-transform: rotateY(0);
+      transform: rotateY(0deg);
+   }
+}
+
+.service_2_content img {
    width: 100%;
 }
 
@@ -477,14 +520,14 @@ ul, p {
    font-size: 30px;
 }
 
-.servic_text_2 h3 span, 
-.servic_text_3 h3 span, 
+.servic_text_2 h3 span,
+.servic_text_3 h3 span,
 .servic_text_4 h3 span {
    font-size: 30px;
 }
 
-.servic_text_2 h3, 
-.servic_text_3 h3, 
+.servic_text_2 h3,
+.servic_text_3 h3,
 .servic_text_4 h3 {
    font-size: 18px;
 }
@@ -493,11 +536,12 @@ ul, p {
    font-size: 48px;
 }
 
-.service_img_2 img, 
+.service_img_2 img,
 .service_img_3 img {
    height: 235px;
 }
-.service_img_1 img, 
+
+.service_img_1 img,
 .service_img_4 img {
    height: 480px;
 }
@@ -505,6 +549,7 @@ ul, p {
 .service_img_3 {
    margin-top: 10px;
 }
+
 /************************************
    Services Section 2 End
 *************************************/
@@ -558,6 +603,7 @@ ul, p {
    font-weight: normal;
    margin-top: 5px;
 }
+
 /************************************
    People Say Section End
 *************************************/
@@ -566,17 +612,17 @@ ul, p {
 /************************************
    Brand Section Start
 *************************************/
-.brands_logo:nth-child(1), 
-.brands_logo:nth-child(2), 
-.brands_logo:nth-child(3), 
-.brands_logo:nth-child(5), 
+.brands_logo:nth-child(1),
+.brands_logo:nth-child(2),
+.brands_logo:nth-child(3),
+.brands_logo:nth-child(5),
 .brands_logo:nth-child(6) {
    border-right: 1px solid #ddd;
 }
 
 .brands_logo:nth-child(1),
-.brands_logo:nth-child(2), 
-.brands_logo:nth-child(3), 
+.brands_logo:nth-child(2),
+.brands_logo:nth-child(3),
 .brands_logo:nth-child(4) {
    border-bottom: 1px solid #ddd;
 }
@@ -584,6 +630,7 @@ ul, p {
 .brand_icon {
    padding: 100px;
 }
+
 /************************************
    Brand Section End
 *************************************/
@@ -626,6 +673,7 @@ ul, p {
    font-family: 'Poppins', sans-serif;
    text-decoration: none;
 }
+
 /************************************
    Latest News Section End
 *************************************/
@@ -660,7 +708,8 @@ ul, p {
    width: 100%;
    border-bottom: 2px solid #d5cdd9;
    bottom: -11%;
-   left: 0%;}
+   left: 0%;
+}
 
 .form_submit input[type="email"] {
    width: 73%;
@@ -726,20 +775,7 @@ ul, p {
 .footer_rights {
    padding-top: 22px;
 }
+
 /************************************
    Footer Section End
 *************************************/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
