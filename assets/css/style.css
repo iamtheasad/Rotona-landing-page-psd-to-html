@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap');
 
 * {
@@ -8,6 +7,7 @@
 
 body {
    -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
    box-sizing: border-box;
    color: #444444;
    font-size: 14px;
@@ -75,10 +75,11 @@ p {
    font-family: 'Open Sans', sans-serif;
    display: block;
    font-weight: 700;
-   -webkit-transition: .1s;
-   transition: .1s;
-   -moz-transition: .1s;
-   -o-transition: .1s;
+   -webkit-transition: .2s;
+   -o-transition: .2s;
+   -moz-transition: .2s;
+   transition: .2s;
+   text-transform: capitalize;
 }
 
 .menu ul li a:hover {
@@ -99,6 +100,9 @@ p {
 
 .rotona_bg {
    background-position: center;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
    background-size: cover;
    background-repeat: no-repeat;
 }
@@ -191,6 +195,8 @@ p {
    left: 6%;
    -webkit-transform: translateY(-50%);
    -ms-transform: translateY(-50%);
+   -moz-transform: translateY(-50%);
+   -o-transform: translateY(-50%);
    transform: translateY(-50%);
 }
 
@@ -330,6 +336,7 @@ p {
    color: #fff;
    font-weight: 700;
    line-height: 46px;
+   display: inline-block;
 }
 
 .count_heading {
@@ -376,6 +383,9 @@ p {
    background-repeat: no-repeat;
    position: relative;
    height: 600px;
+   -webkit-background-size: contain;
+   -moz-background-size: contain;
+   -o-background-size: contain;
    background-size: contain;
 }
 
@@ -387,6 +397,8 @@ p {
    left: 0;
    -webkit-transform: translateY(-50%);
    -ms-transform: translateY(-50%);
+   -moz-transform: translateY(-50%);
+   -o-transform: translateY(-50%);
    transform: translateY(-50%);
 }
 
@@ -398,6 +410,8 @@ p {
    z-index: 2;
    -webkit-transform: translateY(-50%);
    -ms-transform: translateY(-50%);
+   -moz-transform: translateY(-50%);
+   -o-transform: translateY(-50%);
    transform: translateY(-50%);
 }
 
@@ -458,22 +472,35 @@ p {
    opacity: 0.4;
    -webkit-transition: .3s;
    -o-transition: .3s;
+   -moz-transition: .3s;
    transition: .3s;
 }
 
 .single_service_item:hover .at-item {
    color: #3079ed;
    -webkit-animation-name: angry-animation;
+   -moz-animation-name: angry-animation;
+   -o-animation-name: angry-animation;
    animation-name: angry-animation;
    -webkit-animation-duration: 1s;
+   -moz-animation-duration: 1s;
+   -o-animation-duration: 1s;
    animation-duration: 1s;
    -webkit-animation-timing-function: cubic-bezier(0.27, 0.04, 0.76, 1.01);
+   -moz-animation-timing-function: cubic-bezier(0.27, 0.04, 0.76, 1.01);
+   -o-animation-timing-function: cubic-bezier(0.27, 0.04, 0.76, 1.01);
    animation-timing-function: cubic-bezier(0.27, 0.04, 0.76, 1.01);
    -webkit-animation-delay: 0s;
+   -moz-animation-delay: 0s;
+   -o-animation-delay: 0s;
    animation-delay: 0s;
    -webkit-animation-iteration-count: 1;
+   -moz-animation-iteration-count: 1;
+   -o-animation-iteration-count: 1;
    animation-iteration-count: 1;
    -webkit-animation-direction: normal;
+   -moz-animation-direction: normal;
+   -o-animation-direction: normal;
    animation-direction: normal;
 }
 
@@ -489,7 +516,21 @@ p {
    }
 }
 
-@keyframes angry-animation {
+@-moz-keyframes angry-animation {
+   0% {
+      -webkit-transform: rotateY(-180deg);
+      -moz-transform: rotateY(-180deg);
+      transform: rotateY(-180deg);
+   }
+
+   100% {
+      -webkit-transform: rotateY(0);
+      -moz-transform: rotateY(0deg);
+      transform: rotateY(0deg);
+   }
+}
+
+@-o-keyframes angry-animation {
    0% {
       -webkit-transform: rotateY(-180deg);
       transform: rotateY(-180deg);
@@ -497,6 +538,20 @@ p {
 
    100% {
       -webkit-transform: rotateY(0);
+      transform: rotateY(0deg);
+   }
+}
+
+@keyframes angry-animation {
+   0% {
+      -webkit-transform: rotateY(-180deg);
+      -moz-transform: rotateY(-180deg);
+      transform: rotateY(-180deg);
+   }
+
+   100% {
+      -webkit-transform: rotateY(0);
+      -moz-transform: rotateY(0deg);
       transform: rotateY(0deg);
    }
 }
@@ -561,6 +616,9 @@ p {
    background-image: url(../images/people-say/people_say_bg.png);
    padding-top: 100px;
    background-position: center;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
    background-size: cover;
    background-repeat: no-repeat;
    background-attachment: fixed;
@@ -684,6 +742,9 @@ p {
 #footer {
    background-image: url(../images/footer/footer_bg.png);
    background-position: center;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
    background-size: cover;
    padding-top: 300px;
    padding-bottom: 50px;
