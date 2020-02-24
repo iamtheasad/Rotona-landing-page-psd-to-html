@@ -44,12 +44,27 @@ p {
 /******************************
       Header area start
 *******************************/
+#header {
+   position: fixed;
+   z-index: 10;
+   width: 100%;
+}
+
 .menu_area {
    position: absolute;
    top: 3%;
    left: 0;
    width: 100%;
    z-index: 2;
+   background: transparent;
+   -webkit-transition: 750ms ease;
+   -moz-transition: 750ms ease;
+   -o-transition: 750ms ease;
+   transition: 500ms ease;
+}
+
+.menu_area.scrolled {
+   background: #444444;
 }
 
 .logo img {
@@ -64,7 +79,6 @@ p {
 .menu ul li {
    list-style: none;
    display: inline-block;
-   margin-top: 10px;
 }
 
 .menu ul li a {
@@ -833,9 +847,46 @@ p {
    padding-top: 0;
 }
 
-.footer_rights {
-   padding-top: 22px;
+.top_bottom_button {
+   position: fixed;
+   right: 2%;
+   bottom: 19%;
+   width: 55px;
+   height: 55px;
+   background: #913bbe;
+   -webkit-border-radius: 50%;
+   -moz-border-radius: 50%;
+   border-radius: 50%;
+   display: -webkit-box;
+   display: -webkit-flex;
+   display: -moz-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-pack: center;
+   -webkit-justify-content: center;
+   -moz-box-pack: center;
+   -ms-flex-pack: center;
+   justify-content: center;
+   -webkit-box-align: center;
+   -webkit-align-items: center;
+   -moz-box-align: center;
+   -ms-flex-align: center;
+   align-items: center;
+   z-index: 11;
+   font-size: 20px;
+   border: none;
+   color: #fff;
+   -webkit-transition: .2s;
+   -moz-transition: .2s;
+   -o-transition: .2s;
+   transition: .2s;
+   opacity: 0;
 }
+
+.top_bottom_button:hover {
+   background-color: #913bbe;
+}
+
 
 /************************************
    Footer Section End
