@@ -57,9 +57,9 @@ p {
    width: 100%;
    z-index: 2;
    background: transparent;
-   -webkit-transition: 750ms ease;
-   -moz-transition: 750ms ease;
-   -o-transition: 750ms ease;
+   -webkit-transition: 500ms ease;
+   -o-transition: 500ms ease;
+   -moz-transition: 500ms ease;
    transition: 500ms ease;
 }
 
@@ -110,15 +110,13 @@ p {
    overflow: hidden;
    max-width: 2000px;
    margin: 0 auto;
-}
-
-.rotona_bg {
    background-position: center;
    -webkit-background-size: cover;
    -moz-background-size: cover;
    -o-background-size: cover;
    background-size: cover;
    background-repeat: no-repeat;
+   background-attachment: fixed;
 }
 
 .header_bg::after {
@@ -202,11 +200,10 @@ p {
 }
 
 .story_gallery img:nth-child(1) {
-   width: 300px;
-   height: 300px;
+   width: 50%;
    position: absolute;
    top: 50%;
-   left: 6%;
+   left: 1%;
    -webkit-transform: translateY(-50%);
    -ms-transform: translateY(-50%);
    -moz-transform: translateY(-50%);
@@ -216,16 +213,15 @@ p {
 
 .story_gallery img:nth-child(2) {
    position: absolute;
-   left: 46%;
+   left: 41%;
    top: 3%
 }
 
 .story_gallery img:nth-child(3) {
    position: absolute;
    top: 0%;
-   left: 59%;
-   width: 300px;
-   height: 300px;
+   left: 56%;
+   width: 44%;
 }
 
 .story_gallery img:nth-child(4) {
@@ -238,20 +234,19 @@ p {
    position: absolute;
    bottom: 0%;
    left: 50%;
-   width: 186px;
-   height: 186px;
+   width: 28%;
+   border: 10px solid #913BBE;
 }
 
 .story_gallery img:nth-child(6) {
    position: absolute;
    bottom: 23%;
-   left: 82%;
+   left: 80%;
 }
 
 .story_text {
    color: #222222;
    padding-top: 100px;
-   margin-left: 40px;
 }
 
 .story_text h3 {
@@ -379,6 +374,20 @@ p {
 #recent_works {
    padding-top: 85px;
    padding-bottom: 90px;
+   overflow: hidden;
+}
+
+.brands_logo {
+   display: -webkit-box;
+   display: -webkit-flex;
+   display: -moz-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-pack: center;
+   -webkit-justify-content: center;
+   -moz-box-pack: center;
+   -ms-flex-pack: center;
+   justify-content: center;
 }
 
 .recent_wroks_heading h3 {
@@ -464,6 +473,7 @@ p {
 *************************************/
 #services_2 {
    padding: 90px 0px;
+   overflow: hidden;
 }
 
 .sevice_text h3 {
@@ -607,12 +617,12 @@ p {
 
 .service_img_2 img,
 .service_img_3 img {
-   height: 235px;
+   height: 100%;
 }
 
 .service_img_1 img,
 .service_img_4 img {
-   height: 480px;
+   height: 100%;
 }
 
 .service_img_3 {
@@ -638,8 +648,8 @@ p {
    background-attachment: fixed;
 }
 
-.reviews_img {
-   height: 500px;
+.reviews_img img {
+   width: 100%;
 }
 
 .people_say_content {
@@ -787,7 +797,7 @@ p {
 }
 
 .form_submit input[type="email"] {
-   width: 73%;
+   width: 84%;
    border: none;
    padding: 10px;
    background: none;
@@ -803,16 +813,23 @@ p {
    font-weight: 700;
 }
 
-.footer_height {
-   display: table-cell;
+.footer_h {
    height: 340px;
+   display: -webkit-box;
+   display: -webkit-flex;
+   display: -moz-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-align: center;
+   -webkit-align-items: center;
+   -moz-box-align: center;
+   -ms-flex-align: center;
+   align-items: center;
 }
 
 .social_icons {
    font-size: 26px;
-   display: table-cell;
-   height: 340px;
-   padding-left: 30px;
+   padding-left: 25px;
 }
 
 .social_icons a:nth-child(1) {
@@ -884,9 +901,8 @@ p {
 }
 
 .top_bottom_button:hover {
-   background-color: #913bbe;
+   background-color: #9858bb;
 }
-
 
 /************************************
    Footer Section End

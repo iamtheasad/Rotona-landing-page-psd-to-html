@@ -1,0 +1,194 @@
+/* Large Layout: 992px-1280px */
+@media only screen and (min-width: 992px) and (max-width: 1280px) {
+   .form_submit input[type="submit"] {
+      padding: 10px 10px;
+   }
+}
+
+/* Large Layout 992px-1280px End */
+
+
+/* Mobile & Tablet: Layout 0px-991px */
+@media only screen and (max-width: 991px) {
+   .header_body_text h2 {
+      font-size: 25px;
+   }
+
+   .header_body_text h1 {
+      font-size: 40px;
+   }
+
+   .header_body_text p {
+      font-size: 20px;
+   }
+
+   .story_text h2 {
+      font-size: 33px;
+   }
+
+   .story_text h3 {
+      font-size: 23px;
+   }
+
+   .count_heading {
+      width: 100%;
+      margin-bottom: 3.125rem;
+   }
+
+   .count_heading h4 {
+      margin-top: 10px;
+   }
+
+   .recent_works_text h2 {
+      font-size: 30px;
+   }
+
+   .recent_workd_column_reverse {
+      flex-direction: column-reverse;
+   }
+
+   .recent_works_text {
+      height: 0px;
+   }
+
+   .service_icons h3 {
+      font-size: 20px;
+   }
+
+   .service_img_3 {
+      margin-top: 0px;
+   }
+
+   .servic_text_1 h3 {
+      font-size: 18px;
+   }
+
+   .servic_text_1 h3 span {
+      font-size: 35px;
+   }
+
+   .single_service_item {
+      margin-bottom: 10px;
+      margin-right: 0px;
+   }
+
+   .brands_logo:nth-child(1),
+   .brands_logo:nth-child(2),
+   .brands_logo:nth-child(3),
+   .brands_logo:nth-child(4) {
+      border-bottom: none;
+   }
+
+   .brands_logo:nth-child(1),
+   .brands_logo:nth-child(2),
+   .brands_logo:nth-child(3),
+   .brands_logo:nth-child(5),
+   .brands_logo:nth-child(6) {
+      border-right: none;
+   }
+
+   .brand_icon {
+      padding: 50px;
+   }
+
+   .footer_text p {
+      margin-bottom: 50px;
+   }
+
+   .footer_rights {
+      text-align: center;
+      margin-top: 20px;
+      margin-bottom: 15px;
+   }
+
+   .menu_bottom {
+      text-align: center !important;
+   }
+
+}
+
+/* Mobile & Tablet: Layout 0px-991px End */
+
+
+/* Tablet Layout: 768px-991px */
+@media only screen and (min-width: 768px) and (max-width: 991px) {}
+
+/* Tablet Layout: 768px-991px End */
+
+
+/* Mobile Layout: 0px-767px */
+@media screen and (min-width: 0px) and (max-width: 767px) {
+   .story_gallery img:nth-child(6) {
+      left: 72%;
+      bottom: 32%;
+   }
+
+   .story_gallery {
+      height: 366px;
+   }
+
+   .story_gallery img:nth-child(2) {
+      z-index: -1;
+      left: 35%;
+   }
+
+   .people_say_content img {
+      display: none;
+   }
+
+   .latest_news_single_item {
+      margin: 15px;
+   }
+
+   .footer_h {
+      height: 200px;
+   }
+
+   .form_submit input[type="submit"] {
+      padding: 10px 10px;
+   }
+
+   .social_icons {
+      padding-left: 0px;
+   }
+
+   .top_bottom_button {
+      width: 40px;
+      height: 40px;
+   }
+
+}
+
+/* Mobile Layout: 0px-767px End */
+
+
+/* Wide Mobile Layout: 480px-767px */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+   .story_gallery {
+      height: 500px;
+   }
+
+   .service_icon_bg {
+      width: 76%;
+      margin: 0 auto;
+   }
+
+}
+
+/* Wide Mobile Layout: 480px-767px End */
+
+
+/* Small Devices: 0px-479px */
+@media only screen and (max-width: 479px) {
+   .service_icon_bg {
+      width: 100%;
+      margin: 0 auto;
+   }
+
+   .s_icon {
+      left: 41%;
+   }
+
+}
+
+/* Small Devices: 0px-479px */

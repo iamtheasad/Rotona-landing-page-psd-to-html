@@ -3,17 +3,20 @@
 
   $(document).ready(function () {
 
+
     //  Counter Up On Scrolling
     $('.count_test').countUp({
       'time': 2000,
       'delay': 10
     });
 
+
     // Navigation Background Change on Scrolling
     $(window).scroll(function () {
       $('.menu_area').toggleClass('scrolled', $(this).scrollTop() > 800
       );
     });
+
 
     /* Scroll to Top Button Start */
 
@@ -47,11 +50,33 @@
       return false;
 
     }); // click() scroll top end
-
     /* Scroll to Top Button End */
 
 
+    /* News Slider Start */
+    $('.news_slider').owlCarousel({
+      loop: true,
+      margin: 30,
+      dots: true,
+      autoplay: true,
+      autoplayTimeout: 3000,
+      autoplayHoverPause: false,
+      responsive: {
+        0: {
+          items: 1
+        },
+        768: {
+          items: 2
+        },
+        1000: {
+          items: 3
+        }
+      }
+    });
+    /* News Slider End */
+
   });
+
 })(); // use sctrict method end
 
 
